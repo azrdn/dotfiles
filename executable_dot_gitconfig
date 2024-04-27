@@ -1,0 +1,15 @@
+[core]
+	symlinks = true
+	autocrlf = input
+[user]
+	name = Azis Ramadhan
+	email = git@azrd.dev
+	signingkey = ~/.ssh/sign_git.pub
+[init]
+	defaultBranch = main
+[commit]
+	gpgSign = true
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	allowedSignersFile = ~/.ssh/allowed_signers

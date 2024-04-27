@@ -1,0 +1,37 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+setopt beep notify
+bindkey -e
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/azrd/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+# bun completions
+[ -s "/home/azrd/.bun/_bun" ] && source "/home/azrd/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# me
+export LIBVA_DRIVER_NAME=iHD
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
+export PATH="$PATH:$HOME/.local/bin"
+
+alias ls=lsd
+alias la='lsd -ah'
+alias cd=z
+
+eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
+
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
