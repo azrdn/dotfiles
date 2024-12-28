@@ -2,11 +2,14 @@
 	symlinks = true
 	autocrlf = input
 [user]
-	name = Azis Ramadhan
-	email = git@azrd.dev
-	signingkey = ~/.ssh/sign_git.pub
+	name = name
+	email = email
+	signingkey = ~/.ssh/.key.pub # optional
 [init]
 	defaultBranch = main
+
+# optional
+# https://docs.gitlab.com/ee/user/project/repository/signed_commits/ssh.html
 [commit]
 	gpgSign = true
 [gpg]

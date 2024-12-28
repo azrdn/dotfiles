@@ -1,0 +1,6 @@
+[includeIf "gitdir:~/dotfiles/"]
+  path = .personal.gitconfig
+[includeIf "gitdir:/path/to/work/repos/"]
+  path = .work.gitconfig
+[includeIf "gitdir:/path/to/personal/repos/"]
+  path = .personal.gitconfig
