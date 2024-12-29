@@ -9,6 +9,7 @@ end
 
 set -x BUN_INSTALL "$HOME/.bun"
 set -x PNPM_HOME "$HOME/.local/share/pnpm"
+set -x COWPATH "$HOME/.config/cowsay"
 
 fish_add_path -a "$BUN_INSTALL/bin"
 fish_add_path -a "$PNPM_HOME"
