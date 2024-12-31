@@ -1,5 +1,5 @@
 function fish_greeting
-    fortune -sn 80 | cowsay -W 45 -f cat
+    fortune -sn 80 | cowsay -W 50 -f cat
     echo ""
 end
 

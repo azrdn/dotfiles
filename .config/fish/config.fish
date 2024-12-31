@@ -1,8 +1,9 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
-    alias ls=lsd
-    alias la="lsd -ah"
-    alias neofetch=fastfetch
+    alias ls lsd
+    alias la "lsd -ah"
+    alias neofetch fastfetch
+    alias clip wl-copy
 
     zoxide init --cmd cd fish | source
 end

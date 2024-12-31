@@ -5,7 +5,11 @@ window-padding-color = extend
 window-theme = ghostty
 theme = catppuccin-macchiato
 
+freetype-load-flags = no-hinting
 font-size = 10.5
+font-feature = -calt
+font-feature = cv14
+font-feature = zero
 
 command = fish
 shell-integration-features = sudo
