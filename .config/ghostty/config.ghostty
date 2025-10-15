@@ -1,0 +1,26 @@
+minimum-contrast = 1.5
+window-padding-x = 4
+window-padding-y = 2
+window-padding-balance = true
+window-padding-color = extend
+
+theme = dark:Catppuccin Macchiato,light:Catppuccin Latte
+custom-shader = ~/.config/ghostty/cursor.glsl
+# custom-shader = ~/.config/ghostty/shader.glsl
+
+freetype-load-flags = no-hinting
+font-family = "Berkeley Mono Variable"
+font-size = 10
+font-feature = -calt
+font-feature = cv14
+font-feature = zero
+copy-on-select = clipboard
+
+shell-integration-features = sudo, ssh-env
+cursor-style = bar
+mouse-hide-while-typing = true
+selection-clear-on-typing = true
+
+quit-after-last-window-closed = true
+quit-after-last-window-closed-delay = 5m
+

@@ -13,5 +13,17 @@ set -x PNPM_HOME "$HOME/.local/share/pnpm"
 set -x COWPATH "$HOME/.config/cowsay"
 
 fish_add_path -a "$BUN_INSTALL/bin"
-fish_add_path -a "$PNPM_HOME"
 fish_add_path -a "$HOME/.local/bin"
+fish_add_path -a "$HOME/.local/bin/zig"
+
+# pnpm
+set -gx PNPM_HOME "/home/azrd/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
+
+# ZVM
+set -gx ZVM_INSTALL "$HOME/.zvm/self"
+set -gx PATH $PATH "$HOME/.zvm/bin"
+set -gx PATH $PATH "$ZVM_INSTALL/"
